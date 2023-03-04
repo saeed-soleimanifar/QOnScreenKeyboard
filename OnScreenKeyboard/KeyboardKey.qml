@@ -13,6 +13,9 @@ Rectangle {
     id : keySymbol
     color : "white"
     text: keyboardKey.symbol
+    anchors.fill: parent
+    horizontalAlignment: Text.AlignHCenter
+    verticalAlignment: Text.AlignVCenter
   }
 
   MouseArea {
