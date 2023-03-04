@@ -29,5 +29,11 @@ Rectangle {
       anchors.left: parent.left
       border.color: "blue"
       border.width: 1
+
+      KeyboardKey {
+        anchors.top: parent.top
+        anchors.left: parent.left
+      }
+
     }
 }

@@ -6,8 +6,8 @@ Rectangle {
   property string symbol: "S"
   color : "brown"
 
-  width: 10
-  height: 10
+  width: 25
+  height: 25
 
   Text {
     id : keySymbol
