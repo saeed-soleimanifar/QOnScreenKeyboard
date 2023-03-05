@@ -3,5 +3,6 @@
         <file>main.qml</file>
         <file>OnScreenKeyboard/KeyboardPanel.qml</file>
         <file>OnScreenKeyboard/KeyboardKey.qml</file>
+        <file>OnScreenKeyboard/KeyboardRow.qml</file>
     </qresource>
 </RCC>

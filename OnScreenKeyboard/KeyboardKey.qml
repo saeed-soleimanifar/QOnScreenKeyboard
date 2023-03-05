@@ -41,7 +41,7 @@ Rectangle {
     id : mouseArea
     anchors.fill: parent
     onClicked: {
-      console.log("clicked")
+      console.log(keyboardKey.symbol +  " clicked")
     }
   }
 
