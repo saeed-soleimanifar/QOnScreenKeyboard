@@ -30,7 +30,21 @@ Rectangle {
       border.color: "blue"
       border.width: 1
       Column {
+        id: keyboardRows
+        width: keySection.width
+        height: keySection.height
         spacing: 5
+
+        property int numberOfRows: children.length
+
+        function updateRowHeights() {
+          var availableHeight = keySection.height - (keyboardRows.spacing * (numberOfRows - 1));
+          var rowHeight = availableHeight / numberOfRows;
+          for (var i = 0; i < numberOfRows; i++) {
+              keyboardRows.children[i].rowHeight = rowHeight;
+          }
+        }
+
         KeyboardRow {
           keyList: ["Q", "W", "R","Q", "W", "R","Q", "W", "R","Q", "W", "R"]
         }
@@ -52,6 +66,10 @@ Rectangle {
         KeyboardRow {
           keyList: ["A", "S", "D"]
         }
+
+        Component.onCompleted: updateRowHeights()
+        onNumberOfRowsChanged: updateRowHeights()
+
       }
     }
 }
