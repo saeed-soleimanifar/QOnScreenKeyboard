@@ -29,11 +29,29 @@ Rectangle {
       anchors.left: parent.left
       border.color: "blue"
       border.width: 1
-
-      KeyboardKey {
-        anchors.top: parent.top
-        anchors.left: parent.left
+      Column {
+        spacing: 5
+        KeyboardRow {
+          keyList: ["Q", "W", "R","Q", "W", "R","Q", "W", "R","Q", "W", "R"]
+        }
+        KeyboardRow {
+          keyList: ["A", "S", "D"]
+        }
+        KeyboardRow {
+          keyList: ["A", "S", "D"]
+        }
+        KeyboardRow {
+          keyList: ["A", "S", "D"]
+        }
+        KeyboardRow {
+          keyList: ["A", "S", "D"]
+        }
+        KeyboardRow {
+          keyList: ["A", "S", "D"]
+        }
+        KeyboardRow {
+          keyList: ["A", "S", "D"]
+        }
       }
-
     }
 }
